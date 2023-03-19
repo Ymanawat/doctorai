@@ -1,0 +1,34 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align:middle;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: gray;
+  border-bottom: 2px solid gray;
+  padding: 0.5rem;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  color: white;
+  border-bottom-color: white;
+}
