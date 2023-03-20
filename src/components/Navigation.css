@@ -42,9 +42,9 @@
 }
 .sign_up {
   display: flex;
+  flex-direction: row;
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 .sign_up button {
@@ -54,13 +54,14 @@
   color: white;
   background-color: transparent;
   transition: color 0.2s ease, border-color 0.2s ease;
-  margin: 20px;
-  margin-right: 64px;
+  /* margin: 20px; */
+  margin-left: 200px;
   border: 2px solid transparent;
   text-align: center;
   font-family:  'Montserrat', sans-serif;
   font-weight: bold;
   padding: 4px;
+  
 }
 
 .sign_up button:hover,
