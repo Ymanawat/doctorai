@@ -3,6 +3,7 @@
   align-items: center;
   vertical-align:middle;
   margin: 24px;
+  margin-left: 64px;
 }
 
 .logo {
@@ -28,11 +29,12 @@
   transition: color 0.2s ease, border-color 0.2s ease;
   margin: 20px;
   text-align: left;
+  padding: 4px;
 }
 
 .nav-links li:hover,
-.nav-links li:focus,
-.nav-links li:active {
+.nav-links li.focus,
+.nav-links li.active {
   color: white;
   border-bottom-color: white;
 }

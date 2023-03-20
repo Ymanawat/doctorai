@@ -1,39 +1,48 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUpload } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
+import "./Home.css";
+import body from "../images/FullFullBody.png"
+// import fullbody from "../images/FullBody.png";
+// import head from "../images/head.png";
+// import lungs from "../images/lungs.png";
 
-import "../App.css";
-
-import React, { useState } from "react";
-
-function Home() {
-  const [selectedOption, setSelectedOption] = useState("option1");
-
-  const handleSelectChange = (event) => {
-    setSelectedOption(event.target.value);
-  };
-
+function Home(props) {
   return (
-    <>
-      <div className="drop-menu">
-        <p>Select a disease you want to diagnose</p>
-        <select value={selectedOption} onChange={handleSelectChange}>
-          <option value="option1">Select</option>
-          <option value="option2">Brain tumor</option>
-          <option value="option3">Alzheimer</option>
-        </select>
-        {selectedOption !== "option1" && (
-          <div className="selected-content">
-            <div className="imgtag">
-              <button className="img-box">
-                <FontAwesomeIcon icon={faUpload} />
-                Upload images here
-              </button>
-            </div>
-            <button className="btn">Diagnose</button>
+    <div className="home">
+      <div className="features">
+        <h1 className="features-header">
+          Empowering Healthcare with AI-Driven Diagnosis
+        </h1>
+        <div className="features-list">
+          <div className="features-item">
+            <h2 className="features-item-header">Symptom Diagnosis</h2>
+            <p className="features-item-description">
+              Get an accurate diagnosis of your disease by entering your
+              symptoms and getting personalized recommendations.
+            </p>
           </div>
-        )}
+          <div className="features-item">
+            <h2 className="features-item-header">Medical Image Analysis</h2>
+            <p className="features-item-description">
+              Our AI-powered model can analyze medical images such as CT scans,
+              X-rays, and MRIs to help with diagnosis.
+            </p>
+          </div>
+        </div>
+        <button className="features-button">Have a Diagnosis</button>
       </div>
-    </>
+      <div className="body-image">
+        <img src = {body} alt = "body"/>
+        {/* <div className="full-body">
+          <img src={fullbody} alt="full-body"></img>
+        </div>
+        <div className="head">
+          <img src={head} alt="head"></img>
+        </div>
+        <div className="lungs">
+          <img src={lungs} alt="lungs"></img>
+        </div> */}
+      </div>
+    </div>
   );
 }
 
