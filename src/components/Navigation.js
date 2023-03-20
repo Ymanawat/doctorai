@@ -17,13 +17,13 @@ function Navigation(props) {
           className={currentPage === "diagnose" ? "active" : ""}
           onClick={() => onClick("diagnose")}
         >
-          Diagnostic Images
+          Image Analysis
         </li>
         <li
           className={currentPage === "report" ? "active" : ""}
           onClick={() => onClick("report")}
         >
-          Blood Test
+          Symptom Analysis
         </li>
       </ul>
       <div className="sign_up">
