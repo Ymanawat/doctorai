@@ -24,7 +24,7 @@
   .drop-menu select option {
     height: 64px;
     color: white;
-    background-color: transparent;
+    background-color: #1a1042;
     font-family: 'Montserrat', sans-serif;
   }
   .img-box{
