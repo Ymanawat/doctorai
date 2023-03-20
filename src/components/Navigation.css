@@ -1,9 +1,11 @@
 .navigation {
   display: flex;
+  width: 100%;
   align-items: center;
   vertical-align:middle;
   margin: 24px;
   margin-left: 64px;
+
 }
 
 .logo {
