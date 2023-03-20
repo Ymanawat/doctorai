@@ -1,13 +1,14 @@
 /* drop down menu */
 
 .drop-menu {
-    background-color: #353535;
-    width: 800px;
-    margin: 0 auto; /* this will center the div horizontally */
+    background-color: transparent;
+    width: 63%;
+    margin: 48px auto; /* this will center the div horizontally */
   }
   
   .drop-menu p{
     color:white;
+    text-align: start;
     
   }
   .drop-menu select {
@@ -23,7 +24,7 @@
   .drop-menu select option {
     height: 64px;
     color: white;
-    background-color: #282c34;
+    background-color: transparent;
     font-family: 'Montserrat', sans-serif;
   }
   .img-box{

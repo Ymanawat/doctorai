@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpload } from "@fortawesome/free-solid-svg-icons";
 
-import "../App.css";
+import "./DiagnoseHome.css";
 
 import React, { useState } from "react";
 
