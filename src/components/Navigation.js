@@ -1,25 +1,20 @@
 import React from 'react';
 import './Navigation.css';
 
-function Navigation() {
+function Navigation(props) {
+  const { currentPage, onClick } = props;
   return (
     <nav className="navigation">
       <div className="logo">DOCTOR.AI</div>
       <ul className="nav-links">
-        <li>
-          <a href="/" className="nav-link">
-            Home
-          </a>
+        <li className={currentPage === 'home' ? 'active' : ''} onClick={() => onClick('home')}>
+          Home
         </li>
-        <li>
-          <a href="/diagnostic-image" className="nav-link">
-            Diagnostic Image
-          </a>
+        <li className={currentPage === 'diagnose' ? 'active' : ''} onClick={() => onClick('diagnose')}>
+          Diagnostic Images
         </li>
-        <li>
-          <a href="/blood-test" className="nav-link">
-            Blood Test
-          </a>
+        <li className={currentPage === 'report' ? 'active' : ''} onClick={() => onClick('report')}>
+          Blood Test
         </li>
       </ul>
     </nav>

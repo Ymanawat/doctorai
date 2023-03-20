@@ -1,14 +1,15 @@
 .navigation {
   display: flex;
   align-items: center;
-  justify-content: center;
   vertical-align:middle;
+  margin: 24px;
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-right: 1rem;
+  font-size: x-large;
+  font-weight:bolder;
+  margin-right: 64px;
+  color: white;
 }
 
 .nav-links {
@@ -18,17 +19,20 @@
   margin: 0;
 }
 
-.nav-link {
+.nav-links li {
+  display: inline-block;
+  min-width: 200px;
   text-decoration: none;
   color: gray;
   border-bottom: 2px solid gray;
-  padding: 0.5rem;
   transition: color 0.2s ease, border-color 0.2s ease;
+  margin: 20px;
+  text-align: left;
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.nav-link:active {
+.nav-links li:hover,
+.nav-links li:focus,
+.nav-links li:active {
   color: white;
   border-bottom-color: white;
 }

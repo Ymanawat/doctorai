@@ -1,29 +1,26 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+// import results from './components/results';
+import Navigation from './components/Navigation';
+import Home from './components/Home';
+import Diagnose from './components/DiagnoseHome';
 
 function App() {
- 
+  const [currentPage, setCurrentPage] = useState("home");
 
+  const handleNavigationClick = (page) => {
+    setCurrentPage(page);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navigation currentPage={currentPage} onClick={handleNavigationClick} />
+      <div className="page-container">
+        {currentPage === "home" ? <Home /> : null}
+        {currentPage === "diagnose" ? <Diagnose /> : null}
+        {currentPage === "report" ? <Diagnose /> : null}
+      </div>
     </div>
   );
 }
 
 export default App;
-
-
