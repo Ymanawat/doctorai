@@ -4,6 +4,7 @@ import './App.css';
 import Navigation from './components/Navigation';
 import Home from './components/Home';
 import Diagnose from './components/DiagnoseHome';
+import DiagnoseBody from './components/DiagnoseBody';
 
 function App() {
   const [currentPage, setCurrentPage] = useState("home");
@@ -16,7 +17,7 @@ function App() {
       <Navigation currentPage={currentPage} onClick={handleNavigationClick} />
       <div className="page-container">
         {currentPage === "home" ? <Home /> : null}
-        {currentPage === "diagnose" ? <Diagnose /> : null}
+        {currentPage === "diagnose" ? <DiagnoseBody /> : null}
         {currentPage === "report" ? <Diagnose /> : null}
       </div>
     </div>

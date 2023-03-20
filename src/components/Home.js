@@ -1,9 +1,6 @@
 import React from "react";
 import "./Home.css";
 import body from "../images/FullFullBody.png"
-// import fullbody from "../images/FullBody.png";
-// import head from "../images/head.png";
-// import lungs from "../images/lungs.png";
 
 function Home(props) {
   return (
