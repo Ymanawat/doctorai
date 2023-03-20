@@ -18,7 +18,7 @@ function Diagnose() {
         <p>Select a disease you want to diagnose</p>
         <select value={selectedOption} onChange={handleSelectChange}>
           <option value="option1">Select</option>
-          <option value="option2">Brain tumor</option>
+          <option value="option2">Brain Tumor</option>
           <option value="option3">Alzheimer</option>
         </select>
         {selectedOption !== "option1" && (
