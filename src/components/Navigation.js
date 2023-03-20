@@ -26,7 +26,7 @@ function Navigation(props) {
           Blood Test
         </li>
       </ul>
-      <div className="sign_up">
+      <div className="sign_up" onClick={() => onClick("sign_up")}>
         <button>SIGN UP</button>
       </div>
     </nav>
