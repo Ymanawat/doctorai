@@ -5,7 +5,7 @@ function Navigation(props) {
   const { currentPage, onClick } = props;
   return (
     <nav className="navigation">
-      <div className="logo">DOCTOR.AI</div>
+      <div className="logo">DOCTO.AI</div>
       <ul className="nav-links">
         <li
           className={currentPage === "home" ? "active" : ""}
